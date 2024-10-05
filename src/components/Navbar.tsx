@@ -1,18 +1,53 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 
-function Navbar() {
-    return (
-        <nav>
-            <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/who-we-are">Who We Are</Link></li>
-                <li><Link to="/what-we-do">What We Do</Link></li>
-                <li><Link to="/inspiration">Inspiration</Link></li>
-                <li><Link to="/get-in-touch">Get In Touch</Link></li>
-            </ul>
-        </nav>
-    )
-}
+const Navbar = () => {
+  return (
+    <nav className="navbar">
+      <ul className="nav-links">
+        <li>
+          <NavLink 
+            to="/" 
+            end
+            className={({ isActive }) => isActive ? 'nav-link active-link' : 'nav-link'}
+          >
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink 
+            to="/who-we-are"
+            className={({ isActive }) => isActive ? 'nav-link active-link' : 'nav-link'}
+          >
+            About Us
+          </NavLink>
+        </li>
+        <li>
+          <NavLink 
+            to="/what-we-do"
+            className={({ isActive }) => isActive ? 'nav-link active-link' : 'nav-link'}
+          >
+            What We Do
+          </NavLink>
+        </li>
+        <li>
+          <NavLink 
+            to="/inspiration"
+            className={({ isActive }) => isActive ? 'nav-link active-link' : 'nav-link'}
+          >
+            Inspiration
+          </NavLink>
+        </li>
+        <li>
+          <NavLink 
+            to="/get-in-touch"
+            className={({ isActive }) => isActive ? 'nav-link active-link' : 'nav-link'}
+          >
+            Get In Touch
+          </NavLink>
+        </li>
+      </ul>
+    </nav>
+  );
+};
 
 export default Navbar;
