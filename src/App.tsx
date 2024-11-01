@@ -19,6 +19,7 @@ function App() {
           <Route path="/what-we-do" element={<WhatWeDo />} />
           <Route path="/inspiration" element={<Inspiration />} />
           <Route path="/get-in-touch" element={<GetInTouch />} />
+          <Route path='/niceshodz' element={<Home />} />
         </Routes>
       </div>
     </BrowserRouter>
