@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Navigate, NavLink, Route } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -46,6 +46,7 @@ const Navbar = () => {
           </NavLink>
         </li>
       </ul>
+      <Route path="*" element={<Navigate to="/" replace />} />
     </nav>
   );
 };
