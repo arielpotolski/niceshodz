@@ -6,7 +6,7 @@ const Navbar = () => {
       <ul className="nav-links">
         <li>
           <NavLink 
-            to="/" 
+            to="/niceshodz" 
             end
             className={({ isActive }) => isActive ? 'nav-link active-link' : 'nav-link'}
           >
