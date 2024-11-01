@@ -162,6 +162,72 @@ body {
     margin-left: 50px;
 }
 
+/* What we do layout*/
+.what-we-do {
+    text-align: center;
+    background-color: #f8f4eb;
+    padding: 88px 100px;
+}
+
+.what-we-do h2 {
+    font-size: 2.5rem;
+    margin-bottom: 93px;
+    margin-top: -10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Services card grid */
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+/* Individual service card styling */
+.service-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 250px;
+    text-align: center;
+}
+
+/* Service card icon */
+.service-card .icon img {
+    width: 50px; 
+    margin-bottom: 20px;
+}
+
+/* Heading inside each card */
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Text inside each card */
+.service-card p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Call-to-action button styling */
+.service-card button {
+    background-color: transparent;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.service-card button:hover {
+    background-color: #000;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -207,4 +273,125 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+
+/*Get In Touch page styling*/
+.get-in-touch {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #f7f3eb; /* Light cream background */
+    max-height: 600px;
+}
+
+.gallery1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 40%;
+    column-gap: 5px;
+}
+
+.gallery1 img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.gallery2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    margin-top: -65px;
+}
+
+.gallery2 img {
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+}
+
+.gallery2 .img2 {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    margin-top: -65px;
+}
+
+.gallery3 {
+    height: 95%;
+    margin-top: -65px;
+}
+
+.gallery3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-info {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    padding: 0 20px;
+}
+
+.contact-info h2 {
+    font-size: 3.0rem;
+    margin-bottom: 10px;
+    justify-content: left;
+}
+
+.contact-info p {
+    font-size: 1.0rem;
+    margin: 8px 0;
+}
+
+.contact-details div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.0rem;
+}
+
+.location h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.location p {
+    margin: 5px 0;
+    font-size: 1.0rem;
+}
+
+/* Inpiration page styling*/
+.inspiration {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    background-color: #f7f3eb; /* Light cream background */
+    text-align: center;
+    max-height: 600px;
+}
+
+.inspiration .img-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 365px;
+}
+
+.inspiration img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 0% 40%;
+}
+
+.inspiration h2 {
+    font-size: 3.0rem;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 40px;
 }
