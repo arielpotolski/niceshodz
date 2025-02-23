@@ -6,6 +6,7 @@ import Home from './components/Home';
 import WhatWeDo from './components/WhatWeDo';
 import Inspiration from './components/Inspiration';
 import GetInTouch from './components/GetInTouch';
+import BookYourEvent from './components/BookYourEvent';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/what-we-do" element={<WhatWeDo />} />
           <Route path="/inspiration" element={<Inspiration />} />
           <Route path="/get-in-touch" element={<GetInTouch />} />
+          <Route path="/book-your-event" element={<BookYourEvent />} />
           <Route path='/niceshodz' element={<Home />} />
         </Routes>
       </div>
