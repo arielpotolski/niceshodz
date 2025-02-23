@@ -21,7 +21,6 @@ function App() {
           <Route path="/inspiration" element={<Inspiration />} />
           <Route path="/get-in-touch" element={<GetInTouch />} />
           <Route path="/book-your-event" element={<BookYourEvent />} />
-          <Route path='/niceshodz' element={<Home />} />
         </Routes>
       </div>
     </BrowserRouter>
