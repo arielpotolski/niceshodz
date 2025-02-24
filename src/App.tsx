@@ -9,9 +9,8 @@ import GetInTouch from './components/GetInTouch';
 import BookYourEvent from './components/BookYourEvent';
 
 function App() {
-
   return (
-    <BrowserRouter basename="niceshodz">
+    <BrowserRouter>
       <div className="App">
         <Navbar />
         <Routes>
